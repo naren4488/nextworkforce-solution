@@ -32,22 +32,22 @@ export function Contact() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-secondary py-16 md:py-24">
+      <section className="bg-secondary py-[100px] md:py-[120px]">
         <div className="mx-auto max-w-4xl px-6 text-center">
-          <p className="text-sm font-medium uppercase tracking-wider text-secondary-foreground/90">
+          <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">
             Contact Us
           </p>
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-white md:text-5xl">
+          <h1 className="mt-4 text-[clamp(2.5rem,5vw,3.5rem)] font-bold tracking-[-0.3px] text-white">
             Get in Touch
           </h1>
-          <p className="mt-4 text-lg text-white/90">
+          <p className="mt-4 text-base leading-[1.7] text-white/70">
             Ready to strengthen your UKG workforce capability? We'd love to hear from you.
           </p>
         </div>
       </section>
 
       {/* Contact Form + Info */}
-      <section className="mx-auto max-w-6xl px-6 py-16 md:py-24">
+      <section className="mx-auto max-w-[1320px] px-6 py-[100px] md:py-[120px]">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left: Contact Info / Intro */}
           <div>
@@ -89,7 +89,7 @@ export function Contact() {
           </div>
 
           {/* Right: Form */}
-          <div className="rounded-2xl border border-border bg-white p-6 shadow-sm md:p-8">
+          <div className="rounded-2xl border border-border bg-white p-6 shadow-[0_2px_15px_rgba(0,0,0,0.06)] md:p-8">
             {submitted ? (
               <div className="py-12 text-center">
                 <div className="mx-auto flex size-16 items-center justify-center rounded-full bg-primary/10 text-primary">
@@ -175,7 +175,7 @@ export function Contact() {
                     className={cn("mt-2 min-h-[120px]")}
                   />
                 </div>
-                <Button type="submit" size="lg" className="w-full rounded-lg md:w-auto">
+                <Button type="submit" size="lg" className="w-full rounded-full md:w-auto">
                   Send Message
                 </Button>
               </form>

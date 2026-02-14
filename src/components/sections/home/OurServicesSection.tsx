@@ -37,14 +37,14 @@ const services = [
 
 export function OurServicesSection() {
   return (
-    <section className="bg-muted/50 py-16 md:py-24">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="bg-white py-[100px] md:py-[120px]">
+      <div className="mx-auto max-w-[1320px] px-6">
         {/* Heading */}
         <div className="mx-auto mb-12 max-w-3xl text-center">
-          <p className="text-sm font-medium uppercase tracking-wider text-primary">
+          <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">
             OUR SERVICES OVERVIEW
           </p>
-          <p className="mt-2 text-2xl font-bold text-foreground md:text-3xl">
+          <p className="mt-3 text-[clamp(1.75rem,3vw,2.75rem)] font-bold leading-[1.2] tracking-[-0.3px] text-foreground">
             We provide two integrated service offerings designed to support both
             people and platforms within the UKG ecosystem.
           </p>
@@ -63,7 +63,7 @@ export function OurServicesSection() {
           }) => (
             <article
               key={id}
-              className="overflow-hidden rounded-2xl bg-white shadow-sm"
+              className="overflow-hidden rounded-2xl bg-white shadow-[0_2px_15px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_40px_rgba(59,78,240,0.12)]"
             >
               {/* Image */}
               <div className="aspect-video w-full overflow-hidden">
@@ -82,11 +82,11 @@ export function OurServicesSection() {
               </div>
 
               {/* Content */}
-              <div className="p-6 pt-8">
-                <h3 className="text-center text-lg font-bold text-foreground">
+              <div className="p-8 pt-10">
+                <h3 className="text-center text-xl font-bold leading-snug text-foreground">
                   {title}
                 </h3>
-                <p className="mt-4 text-sm text-muted-foreground">{intro}</p>
+                <p className="mt-4 text-base leading-[1.7] text-muted-foreground">{intro}</p>
                 <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
                   {bullets.map((bullet, i) => (
                     <li key={i} className="flex gap-2">

@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { ChevronDown, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import logo from "@/assets/Logo.svg";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { to: "/", label: "Home", hasChevron: true },
-  { to: "/about", label: "About Us", hasChevron: false },
-  { to: "/services", label: "Services", hasChevron: true },
-  { to: "/contact", label: "Contact", hasChevron: false },
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About Us" },
+  { to: "/services", label: "Services" },
+  { to: "/contact", label: "Contact" },
 ] as const;
 
 export function Header() {
@@ -26,11 +26,11 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full px-4 py-4 sm:px-6">
       <nav
         className={cn(
-          "mx-auto grid max-w-7xl grid-cols-[1fr_auto_1fr] items-center gap-4 px-6 py-4",
-          "rounded-full",
-          "border border-white/20",
-          "bg-secondary/80 backdrop-blur-md",
-          "shadow-lg shadow-black/10",
+          "mx-auto grid max-w-[1320px] grid-cols-[1fr_auto_1fr] items-center gap-4 px-6 py-4",
+          "rounded-[100px]",
+          "border border-white/10",
+          "bg-secondary",
+          "shadow-[0_5px_30px_rgba(0,0,0,0.08)]",
         )}
       >
         {/* Left: Logo */}
@@ -41,11 +41,10 @@ export function Header() {
 
         {/* Center: Nav links (desktop only) */}
         <ul className="hidden items-center justify-center gap-8 md:flex">
-          {navLinks.map(({ to, label, hasChevron }) => (
+          {navLinks.map(({ to, label }) => (
             <li key={to}>
-              <Link to={to} className="flex items-center gap-1 text-white transition-opacity hover:opacity-90">
+              <Link to={to} className="text-base font-medium text-white transition-opacity hover:opacity-90">
                 {label}
-                {hasChevron && <ChevronDown className="size-4 shrink-0" aria-hidden />}
               </Link>
             </li>
           ))}
@@ -67,7 +66,7 @@ export function Header() {
                 <Menu className="size-5" aria-hidden />
               </button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-80 bg-secondary border-secondary/50">
+            <SheetContent side="right" className="w-80 border-white/10 bg-secondary">
               <SheetHeader>
                 <SheetTitle className="text-white">Menu</SheetTitle>
               </SheetHeader>
@@ -92,7 +91,7 @@ export function Header() {
           </Sheet>
 
           {/* CTA */}
-          <Button asChild variant="default" size="lg" className="rounded-full font-semibold shadow-md">
+          <Button asChild variant="default" size="lg" className="rounded-full px-9 font-semibold shadow-md transition-all hover:shadow-[0_8px_25px_rgba(59,78,240,0.3)]">
             <Link to="/contact">Contact Us</Link>
           </Button>
         </div>

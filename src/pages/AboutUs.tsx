@@ -44,19 +44,19 @@ export function AboutUs() {
   return (
     <div>
       {/* Hero / Page Banner */}
-      <section className="bg-secondary py-16 md:py-24">
+      <section className="bg-secondary py-[100px] md:py-[120px]">
         <div className="mx-auto max-w-4xl px-6 text-center">
-          <p className="text-sm font-medium uppercase tracking-wider text-secondary-foreground/90">
+          <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">
             ABOUT NEXWORKFORCE SOLUTION
           </p>
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-white md:text-5xl">
+          <h1 className="mt-4 text-[clamp(2.5rem,5vw,3.5rem)] font-bold tracking-[-0.3px] text-white">
             Who We Are
           </h1>
         </div>
       </section>
 
       {/* Who We Are - Main content */}
-      <section className="mx-auto max-w-3xl px-6 py-16 md:py-24">
+      <section className="mx-auto max-w-3xl px-6 py-[100px] md:py-[120px]">
         <div className="space-y-8 text-lg leading-relaxed text-muted-foreground">
           <p>
             NexWorkforce Solution is a specialist advisory firm dedicated
@@ -76,8 +76,8 @@ export function AboutUs() {
       </section>
 
       {/* What We Do */}
-      <section className="bg-muted/40 py-16 md:py-24">
-        <div className="mx-auto max-w-6xl px-6">
+      <section className="bg-muted py-[100px] md:py-[120px]">
+        <div className="mx-auto max-w-[1320px] px-6">
           <h2 className="text-2xl font-bold text-foreground md:text-3xl">
             What We Do
           </h2>
@@ -106,8 +106,8 @@ export function AboutUs() {
       </section>
 
       {/* Our Differentiation + Enterprise Experience */}
-      <section className="bg-muted/40 py-16 md:py-24">
-        <div className="mx-auto max-w-6xl px-6">
+      <section className="bg-white py-[100px] md:py-[120px]">
+        <div className="mx-auto max-w-[1320px] px-6">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
             {/* Our Differentiation */}
             <article>
@@ -155,8 +155,8 @@ export function AboutUs() {
       </section>
 
       {/* Vision + Mission */}
-      <section className="py-16 md:py-24">
-        <div className="mx-auto max-w-6xl px-6">
+      <section className="bg-muted py-[100px] md:py-[120px]">
+        <div className="mx-auto max-w-[1320px] px-6">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             {/* Our Vision */}
             <article className="rounded-2xl border-l-4 border-primary bg-white p-8 shadow-sm">
@@ -190,24 +190,24 @@ export function AboutUs() {
       </section>
 
       {/* Closing Statement + CTA */}
-      <section className="bg-secondary py-16 md:py-24">
+      <section className="bg-secondary py-[100px] md:py-[120px]">
         <div className="mx-auto max-w-3xl px-6 text-center">
-          <h2 className="text-2xl font-bold tracking-tight text-white md:text-3xl">
+          <h2 className="text-[clamp(1.75rem,3vw,2.75rem)] font-bold tracking-[-0.3px] text-white">
             Closing Statement
           </h2>
-          <p className="mt-6 text-lg leading-relaxed text-white/90">
+          <p className="mt-6 text-base leading-[1.7] text-white/70">
             UKG implementation is a milestone.
             <br />
             Workforce performance is a commitment.
           </p>
-          <p className="mt-4 text-lg leading-relaxed text-white/90">
+          <p className="mt-4 text-base leading-[1.7] text-white/70">
             NexWorkforce Solution ensures enterprise UKG environments remain
             capable, controlled, and continuously optimized.
           </p>
           <Button
             asChild
             size="lg"
-            className="mt-10 rounded-lg font-semibold bg-primary text-primary-foreground hover:bg-primary/90"
+            className="mt-10 rounded-full font-semibold"
           >
             <Link to="/contact">Contact Us</Link>
           </Button>

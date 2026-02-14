@@ -82,22 +82,22 @@ export function Services() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-secondary py-16 md:py-24">
+      <section className="bg-secondary py-[100px] md:py-[120px]">
         <div className="mx-auto max-w-4xl px-6 text-center">
-          <p className="text-sm font-medium uppercase tracking-wider text-secondary-foreground/90">
+          <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">
             Our Services
           </p>
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-white md:text-5xl">
+          <h1 className="mt-4 text-[clamp(2.5rem,5vw,3.5rem)] font-bold tracking-[-0.3px] text-white">
             UKG Workforce Management
           </h1>
-          <p className="mt-4 text-lg text-white/90">
+          <p className="mt-4 text-base leading-[1.7] text-white/70">
             Training and managed services designed for enterprise performance.
           </p>
         </div>
       </section>
 
       {/* Service 1: UKG Training */}
-      <section className="mx-auto max-w-4xl px-6 py-16 md:py-24">
+      <section className="mx-auto max-w-4xl px-6 py-[100px] md:py-[120px]">
         <div className="flex items-start gap-4">
           <span className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
             <GraduationCap className="size-6" aria-hidden />
@@ -184,7 +184,7 @@ export function Services() {
       </div>
 
       {/* Service 2: UKG Optimization & Managed Services */}
-      <section className="mx-auto max-w-4xl px-6 py-16 md:py-24">
+      <section className="mx-auto max-w-4xl px-6 py-[100px] md:py-[120px]">
         <div className="flex items-start gap-4">
           <span className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
             <SlidersHorizontal className="size-6" aria-hidden />
@@ -304,15 +304,15 @@ export function Services() {
       </section>
 
       {/* CTA */}
-      <section className="bg-secondary py-16 md:py-24">
+      <section className="bg-secondary py-[100px] md:py-[120px]">
         <div className="mx-auto max-w-4xl px-6 text-center">
-          <p className="text-lg text-white/90">
+          <p className="text-base leading-[1.7] text-white/70">
             Ready to build or optimize your UKG workforce capability?
           </p>
           <Button
             asChild
             size="lg"
-            className="mt-6 rounded-lg font-semibold bg-primary text-primary-foreground hover:bg-primary/90"
+            className="mt-6 rounded-full font-semibold"
           >
             <Link to="/contact">Contact Us</Link>
           </Button>
