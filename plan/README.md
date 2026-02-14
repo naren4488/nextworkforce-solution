@@ -1,0 +1,49 @@
+# Planning Documents
+
+> Central index for all NextWorkforce project planning documents.
+
+## Structure
+
+```
+plan/
+├── README.md                 # This file — index of all plans
+├── project-setup.md          # Project scaffolding, stack, phases
+├── components/               # Shared component plans
+│   └── navbar.md             # Navbar/Header UI
+└── pages/                    # Page-specific plans
+    ├── home/
+    │   ├── hero-section.md       # Home page hero
+    │   ├── below-hero-section.md # Service highlights
+    │   ├── about-section.md      # About NexWorkforce
+    │   ├── services-section.md   # Our Services overview
+    │   └── why-section.md        # Why NexWorkforce Solution
+    ├── about/
+    │   └── page.md
+    ├── services/
+    │   └── page.md
+    └── contact/
+        └── page.md
+    └── contact/
+```
+
+## Quick Links
+
+| Document | Description |
+|----------|-------------|
+| [Project Setup](./project-setup.md) | Vite, React, Tailwind, Shadcn, structure |
+| [Navbar](./components/navbar.md) | Header/navbar UI, layout, styling |
+| [Hero Section](./pages/home/hero-section.md) | Home page hero content and layout |
+| [Below Hero](./pages/home/below-hero-section.md) | Service highlights |
+| [About Section](./pages/home/about-section.md) | About NexWorkforce |
+| [Services Section](./pages/home/services-section.md) | Our Services overview |
+| [Why Section](./pages/home/why-section.md) | Why NexWorkforce Solution |
+| [About Page](./pages/about/page.md) | About Us page |
+| [Services Page](./pages/services/page.md) | Services page |
+| [Contact Page](./pages/contact/page.md) | Contact page |
+
+## Conventions
+
+- One `.md` file per plan/section
+- Use `pages/{page-name}/{section}.md` for page sections
+- Use `components/{component}.md` for shared components
+- Add new plans to this README index when created
