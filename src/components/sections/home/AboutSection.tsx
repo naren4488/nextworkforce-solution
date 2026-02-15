@@ -33,7 +33,7 @@ export function AboutSection() {
         {/* Left: Content */}
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">
-            ABOUT NexWorkforce Solution
+            ABOUT US
           </p>
           <h2 className="mt-4 text-[clamp(2rem,4vw,3rem)] font-bold leading-[1.2] tracking-[-0.3px] text-foreground">
             Dedicated to UKG Workforce Management Excellence.

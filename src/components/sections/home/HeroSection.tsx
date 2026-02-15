@@ -39,10 +39,8 @@ export function HeroSection() {
         {/* Right: Content */}
         <div className="order-1 lg:order-2">
           <div className="flex items-center gap-3">
-            <span className="h-px w-8 shrink-0 bg-primary" />
-            <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">
-              UKG Workforce Management Specialists
-            </p>
+
+            
           </div>
 
           <h1 className="mt-6 text-[clamp(2.5rem,5vw,4.25rem)] font-extrabold leading-[1.15] tracking-[-0.5px] text-white md:text-5xl lg:text-[4.25rem]">

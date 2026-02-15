@@ -5,32 +5,32 @@ const services = [
     id: 1,
     icon: GraduationCap,
     title: "UKG Workforce Management Training",
-    intro: "Our UKG training programs are designed for:",
+    intro: "Enterprise-aligned programs designed to build real-world UKG capability across consultants, HRIS teams, and workforce leaders.",
     image:
       "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop",
     imageAlt: "Professional training session",
+    bulletSectionLabel: null,
     bullets: [
-      "Professionals currently working on UKG",
-      "Consultants transitioning into UKG Workforce Management",
-      "Organizations seeking to upskill internal teams",
+      "Structured functional configuration across UKG modules",
+      "End-to-end workforce process understanding",
+      "Reporting, integration, and payroll alignment exposure",
+      "Enterprise governance and best-practice standards",
     ],
   },
   {
     id: 2,
     icon: SlidersHorizontal,
     title: "UKG Workforce Optimization & Managed Services",
-    intro:
-      "Our managed services are designed for organizations that have already implemented UKG and require:",
+    intro: "Structured advisory and ongoing support ensuring UKG environments remain stable, governed, and performance-driven.",
     image:
       "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
     imageAlt: "Team collaboration",
+    bulletSectionLabel: "Engagement Focus:",
     bullets: [
-      "Post-go-live stabilization",
-      "Ongoing functional support",
-      "Continuous optimization as business needs evolve",
-      "Process and configuration enhancements",
-      "Performance and accuracy improvements",
-      "Best-practice alignment",
+      "Production stabilization and risk mitigation",
+      "Configuration governance and system integrity",
+      "Continuous performance and process optimization",
+      "Business-aligned enhancements and change support",
     ],
   },
 ]
@@ -59,6 +59,7 @@ export function OurServicesSection() {
             intro,
             image,
             imageAlt,
+            bulletSectionLabel,
             bullets,
           }) => (
             <article
@@ -75,7 +76,7 @@ export function OurServicesSection() {
               </div>
 
               {/* Icon - overlaps image boundary */}
-              <div className="-mt-6 flex justify-center px-6">
+              <div className="flex justify-center px-6 mt-6">
                 <span className="flex size-12 items-center justify-center rounded-lg bg-primary/10 text-primary shadow-sm">
                   <Icon className="size-6" aria-hidden />
                 </span>
@@ -87,6 +88,9 @@ export function OurServicesSection() {
                   {title}
                 </h3>
                 <p className="mt-4 text-base leading-[1.7] text-muted-foreground">{intro}</p>
+                {bulletSectionLabel && (
+                  <p className="mt-4 font-semibold text-foreground">{bulletSectionLabel}</p>
+                )}
                 <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
                   {bullets.map((bullet, i) => (
                     <li key={i} className="flex gap-2">

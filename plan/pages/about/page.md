@@ -16,7 +16,7 @@
 **Heading:** Who We Are
 
 **Paragraph 1:**
-> NexWorkforce Solution is a specialist advisory firm dedicated exclusively to UKG Workforce Management.
+> NexWorkforce Solution is a specialist advisory firm dedicated exclusively to Workforce Management.
 
 **Paragraph 2:**
 > We partner with enterprise organizations to strengthen workforce capability and optimize live UKG environments beyond implementation. Our focus is not deployment — it is performance, governance, and sustained operational excellence.
@@ -29,7 +29,7 @@
 **Heading:** Our Vision
 
 **Statement:**
-> To be the trusted global advisory partner for UKG Workforce Management performance and workforce system resilience.
+> To be the trusted global advisory partner for Workforce Management performance and workforce system resilience.
 
 ### 1.4 What We Do
 

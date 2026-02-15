@@ -42,7 +42,7 @@ export function WhySection() {
           {/* Content + metric badge + smaller image */}
           <div className="order-1 lg:order-2">
             <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">
-              Why NexWorkforce Solution
+              Why Choose Us
             </p>
             <h2 className="mt-3 text-[clamp(1.75rem,3vw,2.75rem)] font-bold leading-[1.2] tracking-[-0.3px] text-foreground">
               UKG Expertise That Protects and Extends Enterprise Performance
@@ -66,14 +66,21 @@ export function WhySection() {
                 />
               </div>
 
-              {/* Smaller image */}
-              <div className="flex-1 overflow-hidden rounded-xl sm:max-w-[280px]">
-                <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=350&fit=crop"
-                  alt="Team collaboration"
-                  className="aspect-video w-full object-cover"
-                />
-              </div>
+              {/* Key points */}
+              <ul className="flex-1 space-y-3 sm:max-w-[280px]">
+                <li className="flex gap-3">
+                  <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-primary" />
+                  <span className="text-base text-foreground">
+                    20+ Years Collective Workforce Management Expertise
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-primary" />
+                  <span className="text-base text-foreground">
+                    Supporting workforces exceeding 1M+ employees globally
+                  </span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
