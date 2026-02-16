@@ -28,7 +28,7 @@ const highlights = [
 
 export function ServiceHighlights() {
   return (
-    <section className="bg-muted py-16">
+    <section className="bg-muted py-16 md:py-20">
       <div className="mx-auto grid max-w-[1320px] grid-cols-1 gap-8 px-6 sm:grid-cols-2 lg:grid-cols-3">
         {highlights.map(({ id, icon: iconSrc, title, description }) => (
           <div

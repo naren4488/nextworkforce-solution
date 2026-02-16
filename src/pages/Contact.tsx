@@ -32,7 +32,7 @@ export function Contact() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-secondary py-[100px] md:py-[120px]">
+      <section className="bg-secondary py-16 md:py-20">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">
             Contact Us
@@ -47,7 +47,7 @@ export function Contact() {
       </section>
 
       {/* Contact Form + Info */}
-      <section className="mx-auto max-w-[1320px] px-6 py-[100px] md:py-[120px]">
+      <section className="mx-auto max-w-[1320px] px-6 py-16 md:py-20">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left: Contact Info / Intro */}
           <div>

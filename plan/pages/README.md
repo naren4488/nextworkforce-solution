@@ -27,6 +27,6 @@ pages/
 | Home   | About Section     | [about-section.md](./home/about-section.md) |
 | Home   | Services Section  | [services-section.md](./home/services-section.md) |
 | Home   | Why Section       | [why-section.md](./home/why-section.md) |
-| About  | Page              | [page.md](./about/page.md)             |
-| Services | Page            | [page.md](./services/page.md)          |
-| Contact | Page             | [page.md](./contact/page.md)           |
+| About   | Page   | [page.md](./about/page.md)        |
+| Services| Detail only (no listing) | [page.md](./services/page.md) — `/services/1`, `/services/2` |
+| Contact | Page   | [page.md](./contact/page.md)       |

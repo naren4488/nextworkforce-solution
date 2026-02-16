@@ -119,7 +119,7 @@
 
 9. Responsive: stack cards on mobile
 10. Optional: Carousel dots if adding more services later
-11. Links to Services page (`/services`) if needed
+11. "Learn More" links to service detail pages (`/services/1`, `/services/2`); no Services listing page
 
 ---
 
@@ -218,4 +218,4 @@ Services Section
 - [x] Add bullet lists to cards
 - [x] Wire into Home page
 - [x] Responsive layout
-- [ ] Optional: CTA link to `/services` page
+- [x] Cards link to `/services/1` and `/services/2` (Learn More). Both cards show "Engagement Focus:" before bullets.

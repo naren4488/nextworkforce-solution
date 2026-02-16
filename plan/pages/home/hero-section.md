@@ -91,7 +91,7 @@
 
 | CTA Type | Label | Action / Route |
 |----------|-------|----------------|
-| Primary | Explore Our Services | `/services` |
+| Primary | Explore Our Services | `/services/1` (first service detail page) |
 | Secondary | Contact Us | `/contact` |
 
 **Styling:** Primary = solid blue; Secondary = outline or ghost (white border).
@@ -199,7 +199,7 @@ Hero Section (two-column grid)
       <h1 className="headline">...</h1>
       <p className="supporting-text">...</p>
       <div className="cta-group">
-        <Button asChild><Link to="/services">Explore Our Services</Link></Button>
+        <Button asChild><Link to="/services/1">Explore Our Services</Link></Button>
         <Button variant="outline" asChild><Link to="/contact">Contact Us</Link></Button>
       </div>
     </div>
@@ -227,7 +227,7 @@ Hero Section (two-column grid)
 
 | CTA Label | Route |
 |-----------|-------|
-| Explore Our Services | `/services` |
+| Explore Our Services | `/services/1` |
 | Contact Us | `/contact` |
 
 ---
@@ -249,7 +249,7 @@ Hero Section (two-column grid)
 - [x] Top label (uppercase)
 - [x] Two-line headline
 - [x] Supporting paragraph
-- [x] Primary CTA (Explore Our Services → `/services`)
+- [x] Primary CTA (Explore Our Services → `/services/1`)
 - [x] Secondary CTA (Contact Us → `/contact`)
 - [x] Left visual: central figure in blue circle
 - [x] Left visual: avatar ring (4 avatars)

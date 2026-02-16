@@ -63,7 +63,7 @@
   --primary: #3B4EF0;
   --primary-foreground: #ffffff;
   /* Dark Navy: header, footer, hero, dark sections */
-  --secondary: #10172B;
+  --secondary: #132067;
   --secondary-foreground: #ffffff;
   /* Light sections */
   --muted: #F5F7FA;
@@ -98,7 +98,7 @@
   --popover-foreground: #ffffff;
   --primary: #3B4EF0;
   --primary-foreground: #ffffff;
-  --secondary: #0E1527;
+  --secondary: #132067;
   --secondary-foreground: #ffffff;
   --muted: #10172B;
   --muted-foreground: rgba(255, 255, 255, 0.7);

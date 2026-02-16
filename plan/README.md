@@ -20,10 +20,9 @@ plan/
     ├── about/
     │   └── page.md
     ├── services/
-    │   └── page.md
+    │   └── page.md          # Service detail pages (no listing)
     └── contact/
         └── page.md
-    └── contact/
 ```
 
 ## Quick Links
@@ -38,7 +37,7 @@ plan/
 | [Services Section](./pages/home/services-section.md) | Our Services overview |
 | [Why Section](./pages/home/why-section.md) | Why NexWorkforce Solution |
 | [About Page](./pages/about/page.md) | About Us page |
-| [Services Page](./pages/services/page.md) | Services page |
+| [Service detail pages](./pages/services/page.md) | Service detail pages only (`/services/1`, `/services/2`); no listing page |
 | [Contact Page](./pages/contact/page.md) | Contact page |
 
 ## Conventions
@@ -47,3 +46,4 @@ plan/
 - Use `pages/{page-name}/{section}.md` for page sections
 - Use `components/{component}.md` for shared components
 - Add new plans to this README index when created
+- **Section padding:** All main sections use consistent vertical padding: `py-16 md:py-20`

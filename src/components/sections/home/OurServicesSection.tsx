@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom"
 import { GraduationCap, SlidersHorizontal } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 const services = [
   {
@@ -9,7 +11,7 @@ const services = [
     image:
       "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop",
     imageAlt: "Professional training session",
-    bulletSectionLabel: null,
+    bulletSectionLabel: "Engagement Focus:",
     bullets: [
       "Structured functional configuration across UKG modules",
       "End-to-end workforce process understanding",
@@ -37,7 +39,7 @@ const services = [
 
 export function OurServicesSection() {
   return (
-    <section className="bg-muted py-[100px] md:py-[120px]">
+    <section className="bg-muted py-16 md:py-20">
       <div className="mx-auto max-w-[1320px] px-6">
         {/* Heading */}
         <div className="mx-auto mb-12 max-w-3xl text-center">
@@ -99,6 +101,9 @@ export function OurServicesSection() {
                     </li>
                   ))}
                 </ul>
+                <Button asChild className="mt-6 w-full rounded-full md:w-auto">
+                  <Link to={`/services/${id}`}>Learn More</Link>
+                </Button>
               </div>
             </article>
           ))}

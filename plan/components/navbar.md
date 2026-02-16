@@ -35,10 +35,9 @@ The navbar is a full-width horizontal bar with **three distinct sections**:
 - Aligned horizontally (icon + text)
 
 **Navigation links (center):**
-- Home | About Us | Services | Pages | Blog | Contact
+- Home | About Us | Contact (no Services — service detail pages are reached from Home or direct URL)
 - White text, even spacing
-- **Dropdown chevron** (▼) next to: Home, Services, Pages, Blog
-- No chevron for: About Us, Contact
+- No dropdowns in current implementation
 
 **Right section:**
 - **Search**: Circular button with white border, transparent fill, magnifying glass icon
@@ -50,8 +49,8 @@ The navbar is a full-width horizontal bar with **three distinct sections**:
 | Reference | Our project |
 |-----------|-------------|
 | Techor | NextWorkforce |
-| Home, About Us, Services, Pages, Blog, Contact | Home, About Us, Services, Contact (Pages, Blog optional) |
-| Get A Quote | Get A Quote or similar CTA |
+| Home, About Us, Services, Pages, Blog, Contact | Home, About Us, Contact (no Services in nav; detail pages at /services/1, /services/2) |
+| Get A Quote | Contact Us CTA |
 
 ---
 
@@ -104,9 +103,8 @@ The navbar is a full-width horizontal bar with **three distinct sections**:
    - Link to `/`
 
 3. **Center nav**
-   - Map routes: `/`, `/about`, `/services`, `/contact`
-   - Add chevrons for Home, Services (where dropdowns may exist later)
-   - Skip Pages, Blog for now unless requested
+   - Map routes: `/`, `/about`, `/contact` only (no Services link)
+   - Service detail pages reached from Home section links or direct URL
 
 ### Phase B: Right Section
 
@@ -158,9 +156,8 @@ The navbar is a full-width horizontal bar with **three distinct sections**:
 
     <!-- Center -->
     <ul className="nav-links">
-      <li><Link>Home</Link> <ChevronDown /></li>
+      <li><Link>Home</Link></li>
       <li><Link>About Us</Link></li>
-      <li><Link>Services</Link> <ChevronDown /></li>
       <li><Link>Contact</Link></li>
     </ul>
 
@@ -195,13 +192,14 @@ The navbar is a full-width horizontal bar with **three distinct sections**:
 
 ### 4.4 Routes
 
-| Label | Route |
-|-------|-------|
-| Home | `/` |
-| About Us | `/about` |
-| Services | `/services` |
-| Contact | `/contact` |
-| Get A Quote | `/contact` (or `#quote`) |
+| Label     | Route       |
+|-----------|-------------|
+| Home      | `/`         |
+| About Us  | `/about`    |
+| Contact   | `/contact`  |
+| CTA       | `/contact` (Contact Us) |
+
+Service detail pages: `/services/1`, `/services/2` (not in nav; linked from Home).
 
 ---
 
@@ -210,8 +208,8 @@ The navbar is a full-width horizontal bar with **three distinct sections**:
 - [x] Restructure Header with 3-section layout
 - [x] Add logo icon + text
 - [x] Add top accent line (primary color)
-- [x] Center nav with links + chevrons where appropriate
-- [x] Add search icon button
+- [x] Center nav with links: Home, About Us, Contact (no Services)
+- [x] Add search icon button (optional)
 - [x] Add hamburger icon button
 - [x] Add "Get A Quote" CTA button (pill-shaped)
 - [x] Apply correct colors (#474F82 bg, #2B4DFF accent/CTA)
@@ -221,6 +219,6 @@ The navbar is a full-width horizontal bar with **three distinct sections**:
 
 ## 6. Notes
 
-- Reference shows 6 nav items (incl. Pages, Blog); we have 4. Add Pages/Blog later if needed.
-- Dropdown content for Home, Services, etc. is Phase 2.
+- Nav has 3 items: Home, About Us, Contact. No Services link; service detail pages are reached from Home ("Learn More", "Explore Our Services" → `/services/1`) or direct URL.
+- Reference showed dropdowns; current implementation has no dropdowns.
 - Search and hamburger can be non-functional initially; wire up in later iterations.

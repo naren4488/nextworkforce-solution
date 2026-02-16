@@ -11,7 +11,7 @@ const features = [
 
 export function AboutSection() {
   return (
-    <section className="bg-white py-[100px] md:py-[120px]">
+    <section className="bg-white py-16 md:py-20">
       <div className="mx-auto grid max-w-[1320px] grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2 lg:gap-16">
         {/* Left: Content */}
         <div>

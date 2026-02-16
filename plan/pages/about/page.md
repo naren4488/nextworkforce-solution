@@ -97,18 +97,20 @@ About Page
 ├── Who We Are Section
 │   ├── Heading
 │   └── Three paragraphs
+├── Vision + Mission Section (two-column or stacked) — above What We Do
+│   ├── Our Vision (card or block)
+│   └── Our Mission (card with bullet list)
 ├── What We Do Section
 │   ├── Heading + intro
 │   └── Two pillars (Training, Optimization & Managed Services)
 ├── Our Differentiation + Enterprise Experience (two-column)
 │   ├── Our Differentiation (what we are not / are)
 │   └── Enterprise Experience (credentials)
-├── Vision + Mission Section (two-column or stacked)
-│   ├── Our Vision (card or block)
-│   └── Our Mission (card with bullet list)
 ├── Closing Statement (secondary bg, centered)
 └── CTA (Contact Us)
 ```
+
+**Section padding:** All sections use consistent vertical padding: `py-16 md:py-20`.
 
 ### 2.2 Creative Approach
 

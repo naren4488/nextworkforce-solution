@@ -18,11 +18,10 @@ export function HeroSection() {
       />
       {/* Bluish overlay */}
       <div
-        // className="absolute inset-0 size-full bg-[#162165]/95"
-        className="absolute inset-0 size-full bg-secondary/95"
+        className="absolute inset-0 size-full bg-secondary/100"
         aria-hidden
       />
-      <div className="relative z-10 mx-auto grid max-w-[1320px] grid-cols-1 items-center gap-12 px-6 py-[100px] lg:grid-cols-2 lg:gap-16 lg:py-[120px]">
+      <div className="relative z-10 mx-auto grid max-w-[1320px] grid-cols-1 items-center gap-12 px-6 py-16 lg:grid-cols-2 lg:gap-16 lg:py-20">
         {/* Left: Hero visual */}
         <div className="relative order-2 flex min-h-[400px] items-center justify-center overflow-hidden rounded-2xl lg:order-1 lg:min-h-[70vh]">
           <div
@@ -60,7 +59,7 @@ export function HeroSection() {
               size="lg"
               className="rounded-full px-9 py-4 font-semibold shadow-md transition-all hover:shadow-[0_8px_25px_rgba(59,78,240,0.3)]"
             >
-              <Link to="/services">Explore Our Services</Link>
+              <Link to="/services/1">Explore Our Services</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="rounded-full border-white px-9 py-4 font-semibold ">
               <Link to="/contact">Contact Us</Link>

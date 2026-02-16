@@ -4,7 +4,7 @@
 
 **Stack:** Vite · React · Shadcn UI · Tailwind CSS  
 **Type:** Static website  
-**Pages:** Home, About Us, Services, Contact
+**Pages:** Home, About Us, Service detail pages only (no Services listing), Contact
 
 ---
 
@@ -78,7 +78,7 @@ src/
 ├── pages/
 │   ├── Home.tsx
 │   ├── AboutUs.tsx
-│   ├── Services.tsx
+│   ├── ServiceDetail.tsx   # /services/1, /services/2 (no Services.tsx listing page)
 │   └── Contact.tsx
 ├── lib/
 │   └── utils.ts
@@ -98,16 +98,16 @@ src/
 
 ### 5.1 Pages to implement
 
-| Page      | Route    | Purpose                          |
-|----------|----------|----------------------------------|
-| Home     | `/`      | Landing, hero, featured content  |
-| About Us | `/about` | Company info, mission, team      |
-| Services | `/services` | Offerings, packages           |
-| Contact  | `/contact`  | Form, address, map link      |
+| Page        | Route         | Purpose                                |
+|-------------|---------------|----------------------------------------|
+| Home        | `/`           | Landing, hero, featured content         |
+| About Us    | `/about`      | Company info, mission, vision, team     |
+| Service detail | `/services/1`, `/services/2` | Per-service content; `/services` redirects to `/services/1` |
+| Contact     | `/contact`    | Form, address, map link                 |
 
 ### 5.2 Shared layout
-- **Header:** Logo, navigation links, optional CTA
-- **Footer:** Links, social, copyright
+- **Header:** Logo, nav links (Home, About Us, Contact only — no Services), CTA (Contact Us)
+- **Footer:** Links (About, Contact), social, copyright — no Services link
 - Wrap all pages in a common layout component
 
 ---
@@ -147,7 +147,7 @@ npm run build
 3. **Shadcn init** — component system
 4. **Project structure** — folders, layout, routing
 5. **Shared layout** — Header + Footer
-6. **Pages** — Home → About → Services → Contact
+6. **Pages** — Home → About → Service detail pages → Contact
 7. **Shadcn components** — add per page needs
 8. **Polish** — responsiveness, copy, assets
 
