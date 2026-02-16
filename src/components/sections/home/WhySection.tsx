@@ -2,6 +2,7 @@ import ourVision from "@/assets/our-vision.png"
 import ourMission from "@/assets/our-mission.png"
 import ourAwards from "@/assets/our-awards.png"
 import yearsOfExperience from "@/assets/years-of-experience.png"
+import whyChooseUsVideo from "@/assets/about-us.mov"
 
 const blocks = [
   {
@@ -30,12 +31,16 @@ export function WhySection() {
       <div className="mx-auto max-w-[1320px] px-6">
         {/* Top: Two-column - image (left) + content (right) */}
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          {/* Large image */}
+          {/* Why choose us video */}
           <div className="order-2 overflow-hidden rounded-2xl lg:order-1">
-            <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop"
-              alt="Professional office setting"
+            <video
+              src={whyChooseUsVideo}
               className="aspect-4/3 w-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              aria-label="Why choose NexWorkforce Solution"
             />
           </div>
 

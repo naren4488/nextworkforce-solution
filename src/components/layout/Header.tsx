@@ -67,7 +67,7 @@ export function Header() {
                 <Menu className="size-5" aria-hidden />
               </button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-80 border-white/10 bg-secondary">
+            <SheetContent side="right" className="w-80 border-white/10 bg-secondary" closeButtonClassName="text-white">
               <SheetHeader>
                 <SheetTitle className="text-white">Menu</SheetTitle>
               </SheetHeader>
