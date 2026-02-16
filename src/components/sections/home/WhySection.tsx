@@ -26,7 +26,7 @@ const blocks = [
 
 export function WhySection() {
   return (
-    <section className="bg-muted py-[100px] md:py-[120px]">
+    <section className="bg-white py-[100px] md:py-[120px]">
       <div className="mx-auto max-w-[1320px] px-6">
         {/* Top: Two-column - image (left) + content (right) */}
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">

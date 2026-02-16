@@ -26,7 +26,8 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full px-4 py-4 sm:px-6">
       <nav
         className={cn(
-          "mx-auto grid max-w-[1320px] grid-cols-[1fr_auto_1fr] items-center gap-4 px-6 py-4",
+          "mx-auto flex max-w-[1320px] items-center justify-between gap-4 px-6 py-4",
+          "md:grid md:grid-cols-[1fr_auto_1fr] md:justify-between",
           "rounded-[100px]",
           "border border-white/10",
           "bg-secondary",
@@ -34,7 +35,7 @@ export function Header() {
         )}
       >
         {/* Left: Logo */}
-        <Link to="/" className="flex items-center gap-2 transition-opacity hover:opacity-90" aria-label="NextWorkforce home">
+        <Link to="/" className="flex shrink-0 items-center gap-2 transition-opacity hover:opacity-90" aria-label="NextWorkforce home">
           <img src={logo} alt="NexWorkforce Solution" className="h-9 w-auto object-contain" />
           <span className="text-white font-medium">NexWorkforce</span>
         </Link>
@@ -90,8 +91,13 @@ export function Header() {
             </SheetContent>
           </Sheet>
 
-          {/* CTA */}
-          <Button asChild variant="default" size="lg" className="rounded-full px-9 font-semibold shadow-md transition-all hover:shadow-[0_8px_25px_rgba(59,78,240,0.3)]">
+          {/* CTA (desktop only; mobile has Contact Us inside the menu) */}
+          <Button
+            asChild
+            variant="default"
+            size="lg"
+            className="hidden rounded-full px-9 font-semibold shadow-md transition-all hover:shadow-[0_8px_25px_rgba(59,78,240,0.3)] md:inline-flex"
+          >
             <Link to="/contact">Contact Us</Link>
           </Button>
         </div>
