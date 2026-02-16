@@ -1,6 +1,7 @@
 import { useParams, Navigate } from "react-router-dom"
 import { Check, GraduationCap, SlidersHorizontal } from "lucide-react"
 import { ContactForm } from "@/components/ContactForm"
+import { AnimateIn } from "@/components/AnimateIn"
 import service1Image from "@/assets/Service 1Training.png"
 import service2Image from "@/assets/Service 2.png"
 
@@ -195,7 +196,7 @@ export function ServiceDetail() {
     <div>
       {/* Hero */}
       <section className="bg-secondary py-16 md:py-20">
-        <div className="mx-auto max-w-[1320px] px-6 text-center">
+        <AnimateIn type="heading" className="mx-auto max-w-[1320px] px-6 text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">
             Our Services
           </p>
@@ -203,7 +204,7 @@ export function ServiceDetail() {
             {title}
           </h1>
           <p className="mt-4 text-base leading-[1.7] text-white/70">{subtitle}</p>
-        </div>
+        </AnimateIn>
       </section>
 
       {/* Two-column: Contact form (left 40%) + Service content (right 60%) */}
@@ -216,7 +217,7 @@ export function ServiceDetail() {
 
           {/* Right: Service details */}
           <div>
-            <div className="flex items-start gap-4">
+            <AnimateIn type="heading" className="flex items-start gap-4">
               <span className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
                 <Icon className="size-6" aria-hidden />
               </span>
@@ -225,7 +226,7 @@ export function ServiceDetail() {
                   {title}
                 </h2>
               </div>
-            </div>
+            </AnimateIn>
 
             {serviceImage && (
               <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-muted/30 shadow-sm">

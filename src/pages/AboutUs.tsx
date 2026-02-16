@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { Check, GraduationCap, SlidersHorizontal } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { AnimateIn } from "@/components/AnimateIn"
 import heroAbout from "@/assets/hero2.jpg"
 import ourVisionImg from "@/assets/our-vision.png"
 import ourMissionImg from "@/assets/our-mission.png"
@@ -49,14 +50,14 @@ export function AboutUs() {
     <div>
       {/* Hero / Page Banner */}
       <section className="bg-secondary py-16 md:py-20">
-        <div className="mx-auto max-w-4xl px-6 text-center">
+        <AnimateIn type="heading" className="mx-auto max-w-4xl px-6 text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">
             ABOUT NEXWORKFORCE SOLUTION
           </p>
           <h1 className="mt-4 text-[clamp(2.5rem,5vw,3.5rem)] font-bold tracking-[-0.3px] text-white">
             Who We Are
           </h1>
-        </div>
+        </AnimateIn>
       </section>
 
       {/* Who We Are - Main content + image */}
@@ -132,9 +133,11 @@ export function AboutUs() {
       {/* What We Do */}
       <section className="bg-white py-16 md:py-20">
         <div className="mx-auto max-w-[1320px] px-6">
-          <h2 className="text-2xl font-bold text-foreground md:text-3xl">
-            What We Do
-          </h2>
+          <AnimateIn type="heading">
+            <h2 className="text-2xl font-bold text-foreground md:text-3xl">
+              What We Do
+            </h2>
+          </AnimateIn>
           <p className="mt-4 max-w-2xl text-muted-foreground">
             We operate across two focused service pillars:
           </p>
@@ -228,13 +231,15 @@ export function AboutUs() {
             NexWorkforce Solution ensures enterprise UKG environments remain
             capable, controlled, and continuously optimized.
           </p>
-          <Button
-            asChild
-            size="lg"
-            className="mt-10 rounded-full font-semibold"
-          >
-            <Link to="/contact">Contact Us</Link>
-          </Button>
+          <AnimateIn type="cta" className="mt-10">
+            <Button
+              asChild
+              size="lg"
+              className="rounded-full font-semibold"
+            >
+              <Link to="/contact">Contact Us</Link>
+            </Button>
+          </AnimateIn>
         </div>
       </section>
     </div>

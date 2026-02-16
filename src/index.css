@@ -131,3 +131,44 @@
     @apply bg-background text-foreground font-sans antialiased;
   }
 }
+
+/* Minimal scroll-triggered animations (see plan/scroll-animations.md) */
+.animate-scroll-heading {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+.animate-scroll-heading.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-scroll-cta {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.35s ease-out, transform 0.35s ease-out;
+}
+.animate-scroll-cta.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-scroll-block {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.35s ease-out, transform 0.35s ease-out;
+}
+.animate-scroll-block.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-scroll-heading,
+  .animate-scroll-cta,
+  .animate-scroll-block {
+    opacity: 1;
+    transform: none;
+    transition-duration: 0.01ms;
+  }
+}

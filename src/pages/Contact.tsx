@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Mail, MessageSquare } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { AnimateIn } from "@/components/AnimateIn"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
@@ -33,7 +34,7 @@ export function Contact() {
     <div>
       {/* Hero */}
       <section className="bg-secondary py-16 md:py-20">
-        <div className="mx-auto max-w-4xl px-6 text-center">
+        <AnimateIn type="heading" className="mx-auto max-w-4xl px-6 text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">
             Contact Us
           </p>
@@ -43,7 +44,7 @@ export function Contact() {
           <p className="mt-4 text-base leading-[1.7] text-white/70">
             Ready to strengthen your UKG workforce capability? We'd love to hear from you.
           </p>
-        </div>
+        </AnimateIn>
       </section>
 
       {/* Contact Form + Info */}
@@ -51,9 +52,11 @@ export function Contact() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left: Contact Info / Intro */}
           <div>
-            <h2 className="text-2xl font-bold text-foreground">
-              Let's Start a Conversation
-            </h2>
+            <AnimateIn type="heading">
+              <h2 className="text-2xl font-bold text-foreground">
+                Let's Start a Conversation
+              </h2>
+            </AnimateIn>
             <p className="mt-4 text-muted-foreground leading-relaxed">
               Whether you're looking for UKG Workforce Management training,
               post-go-live optimization, or ongoing managed support, our team is
@@ -175,9 +178,11 @@ export function Contact() {
                     className={cn("mt-2 min-h-[120px]")}
                   />
                 </div>
-                <Button type="submit" size="lg" className="w-full rounded-full md:w-auto">
-                  Send Message
-                </Button>
+                <AnimateIn type="cta">
+                  <Button type="submit" size="lg" className="w-full rounded-full md:w-auto">
+                    Send Message
+                  </Button>
+                </AnimateIn>
               </form>
             )}
           </div>

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { AnimateIn } from "@/components/AnimateIn"
 import aboutUsVideo from "@/assets/about-us.mov"
 
 const features = [
@@ -15,12 +16,14 @@ export function AboutSection() {
       <div className="mx-auto grid max-w-[1320px] grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2 lg:gap-16">
         {/* Left: Content */}
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">
-            ABOUT US
-          </p>
-          <h2 className="mt-4 text-[clamp(2rem,4vw,3rem)] font-bold leading-[1.2] tracking-[-0.3px] text-foreground">
-            Dedicated to UKG Workforce Management Excellence.
-          </h2>
+          <AnimateIn type="heading">
+            <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">
+              ABOUT US
+            </p>
+            <h2 className="mt-4 text-[clamp(2rem,4vw,3rem)] font-bold leading-[1.2] tracking-[-0.3px] text-foreground">
+              Dedicated to UKG Workforce Management Excellence.
+            </h2>
+          </AnimateIn>
           <p className="mt-4 text-base leading-[1.7] text-muted-foreground">
             NexWorkforce Solution is a specialist advisory firm dedicated
             exclusively to UKG Workforce Management. We support enterprise
@@ -37,9 +40,11 @@ export function AboutSection() {
               </li>
             ))}
           </ul>
-          <Button asChild className="mt-8 rounded-full font-semibold" size="lg">
-            <Link to="/about">More About Us</Link>
-          </Button>
+          <AnimateIn type="cta" className="mt-8">
+            <Button asChild className="rounded-full font-semibold" size="lg">
+              <Link to="/about">More About Us</Link>
+            </Button>
+          </AnimateIn>
         </div>
 
         {/* Right: About us video */}

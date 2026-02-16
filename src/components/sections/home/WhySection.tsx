@@ -1,3 +1,4 @@
+import { AnimateIn } from "@/components/AnimateIn"
 import ourVision from "@/assets/our-vision.png"
 import ourMission from "@/assets/our-mission.png"
 import ourAwards from "@/assets/our-awards.png"
@@ -46,12 +47,14 @@ export function WhySection() {
 
           {/* Content + metric badge + smaller image */}
           <div className="order-1 lg:order-2">
-            <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">
-              Why Choose Us
-            </p>
-            <h2 className="mt-3 text-[clamp(1.75rem,3vw,2.75rem)] font-bold leading-[1.2] tracking-[-0.3px] text-foreground">
-              UKG Expertise That Protects and Extends Enterprise Performance
-            </h2>
+            <AnimateIn type="heading">
+              <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">
+                Why Choose Us
+              </p>
+              <h2 className="mt-3 text-[clamp(1.75rem,3vw,2.75rem)] font-bold leading-[1.2] tracking-[-0.3px] text-foreground">
+                UKG Expertise That Protects and Extends Enterprise Performance
+              </h2>
+            </AnimateIn>
             <p className="mt-4 text-base leading-[1.7] text-muted-foreground">
               UKG implementation is only the beginning. Sustained workforce
               performance requires governance, capability, and disciplined
@@ -61,7 +64,7 @@ export function WhySection() {
             </p>
 
             {/* Center: Metric badge + smaller image */}
-            <div className="mt-10 flex flex-col gap-6 sm:flex-row  sm:gap-8">
+            <div className="mt-4 flex flex-col items-center gap-6 sm:flex-row sm:gap-8">
               {/* Metric badge */}
               <div className="flex shrink-0">
                 <img

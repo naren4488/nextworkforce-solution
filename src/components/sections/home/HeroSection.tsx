@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { AnimateIn } from "@/components/AnimateIn";
 import heroBg from "@/assets/hero-bg.png";
 import hero2 from "@/assets/hero2.jpg";
 
@@ -37,22 +38,21 @@ export function HeroSection() {
 
         {/* Right: Content */}
         <div className="order-1 lg:order-2">
-          <div className="flex items-center gap-3">
+          <AnimateIn type="heading">
+            <h1 className="mt-6 text-[clamp(2.5rem,5vw,4.25rem)] font-extrabold leading-[1.15] tracking-[-0.5px] text-white md:text-4xl ">
+              Workforce Management Training and Optimization
+            </h1>
+          </AnimateIn>
 
-            
-          </div>
+          <AnimateIn type="block" className="mt-6">
+            <p className="max-w-xl text-base leading-[1.7] text-white/70">
+              Nex Workforce Advisory delivers structured UKG Workforce Management training and enterprise-grade managed
+              services. We build workforce capability while ensuring live UKG environments remain stable, compliant, and
+              performance-driven across global markets.
+            </p>
+          </AnimateIn>
 
-          <h1 className="mt-6 text-[clamp(2.5rem,5vw,4.25rem)] font-extrabold leading-[1.15] tracking-[-0.5px] text-white md:text-4xl ">
-          Workforce Management Training and Optimization
-          </h1>
-
-          <p className="mt-6 max-w-xl text-base leading-[1.7] text-white/70">
-            Nex Workforce Advisory delivers structured UKG Workforce Management training and enterprise-grade managed
-            services. We build workforce capability while ensuring live UKG environments remain stable, compliant, and
-            performance-driven across global markets.
-          </p>
-
-          <div className="mt-8 flex flex-wrap gap-4">
+          <AnimateIn type="cta" className="mt-8 flex flex-wrap gap-4">
             <Button
               asChild
               size="lg"
@@ -63,7 +63,7 @@ export function HeroSection() {
             <Button asChild variant="outline" size="lg" className="rounded-full border-white px-9 py-4 font-semibold ">
               <Link to="/contact">Contact Us</Link>
             </Button>
-          </div>
+          </AnimateIn>
         </div>
       </div>
     </section>

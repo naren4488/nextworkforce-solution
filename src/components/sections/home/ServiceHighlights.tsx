@@ -1,3 +1,4 @@
+import { AnimateIn } from "@/components/AnimateIn"
 import icon1 from "@/assets/icon-2-1.png"
 import icon2 from "@/assets/icon-2-2.png"
 import icon3 from "@/assets/icon-2-3.png"
@@ -29,7 +30,7 @@ const highlights = [
 export function ServiceHighlights() {
   return (
     <section className="bg-muted py-16 md:py-20">
-      <div className="mx-auto grid max-w-[1320px] grid-cols-1 gap-8 px-6 sm:grid-cols-2 lg:grid-cols-3">
+      <AnimateIn type="block" className="mx-auto grid max-w-[1320px] grid-cols-1 gap-8 px-6 sm:grid-cols-2 lg:grid-cols-3">
         {highlights.map(({ id, icon: iconSrc, title, description }) => (
           <div
             key={id}
@@ -44,7 +45,7 @@ export function ServiceHighlights() {
             </div>
           </div>
         ))}
-      </div>
+      </AnimateIn>
     </section>
   )
 }

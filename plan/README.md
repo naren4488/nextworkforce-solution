@@ -8,6 +8,7 @@
 plan/
 ├── README.md                 # This file — index of all plans
 ├── project-setup.md          # Project scaffolding, stack, phases
+├── scroll-animations.md     # Minimal scroll-triggered animations (site-wide)
 ├── components/               # Shared component plans
 │   ├── navbar.md             # Navbar/Header UI
 │   └── footer.md             # Footer & layout (home vs other pages)
@@ -31,6 +32,7 @@ plan/
 | Document | Description |
 |----------|-------------|
 | [Project Setup](./project-setup.md) | Vite, React, Tailwind, Shadcn, structure |
+| [Scroll Animations](./scroll-animations.md) | Minimal scroll-triggered animations (headings, CTAs) site-wide |
 | [Navbar](./components/navbar.md) | Header/navbar UI, Services dropdown, layout |
 | [Footer](./components/footer.md) | Footer layout, contact-in-footer on home only |
 | [Hero Section](./pages/home/hero-section.md) | Home page hero content and layout |

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { GraduationCap, SlidersHorizontal } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AnimateIn } from "@/components/AnimateIn";
 
 const services = [
   {
@@ -42,15 +43,15 @@ export function OurServicesSection() {
     <section className="bg-muted py-16 md:py-20">
       <div className="mx-auto max-w-[1320px] px-6">
         {/* Heading */}
-        <div className="mx-auto mb-12 max-w-3xl text-center">
+        <AnimateIn type="heading" className="mx-auto mb-12 max-w-3xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">OUR SERVICES OVERVIEW</p>
           <p className="mt-3 text-[clamp(1.75rem,3vw,2.75rem)] font-bold leading-[1.2] tracking-[-0.3px] text-foreground">
             Integrated Workforce Management Services for People and Platform Performance
           </p>
-        </div>
+        </AnimateIn>
 
         {/* Cards grid */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <AnimateIn type="block" className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {services.map(({ id, icon: Icon, title, intro, image, imageAlt, bulletSectionLabel, bullets }) => (
             <article
               key={id}
@@ -87,7 +88,7 @@ export function OurServicesSection() {
               </div>
             </article>
           ))}
-        </div>
+        </AnimateIn>
       </div>
     </section>
   );
