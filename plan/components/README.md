@@ -4,6 +4,7 @@
 
 ## Index
 
-| Component | Plan                 |
-|-----------|----------------------|
+| Component | Plan |
+|-----------|------|
 | Navbar    | [navbar.md](./navbar.md) |
+| Footer    | [footer.md](./footer.md) |

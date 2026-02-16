@@ -42,10 +42,9 @@ export function HeroSection() {
             
           </div>
 
-          <h1 className="mt-6 text-[clamp(2.5rem,5vw,4.25rem)] font-extrabold leading-[1.15] tracking-[-0.5px] text-white md:text-5xl lg:text-[4.25rem]">
+          <h1 className="mt-6 text-[clamp(2.5rem,5vw,4.25rem)] font-extrabold leading-[1.15] tracking-[-0.5px] text-white md:text-4xl ">
           Workforce Management Training and Optimization
           </h1>
-          <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">Specialized in UKG Workforce Management environments</p>
 
           <p className="mt-6 max-w-xl text-base leading-[1.7] text-white/70">
             Nex Workforce Advisory delivers structured UKG Workforce Management training and enterprise-grade managed

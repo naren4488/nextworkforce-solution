@@ -9,7 +9,8 @@ plan/
 ├── README.md                 # This file — index of all plans
 ├── project-setup.md          # Project scaffolding, stack, phases
 ├── components/               # Shared component plans
-│   └── navbar.md             # Navbar/Header UI
+│   ├── navbar.md             # Navbar/Header UI
+│   └── footer.md             # Footer & layout (home vs other pages)
 └── pages/                    # Page-specific plans
     ├── home/
     │   ├── hero-section.md       # Home page hero
@@ -30,7 +31,8 @@ plan/
 | Document | Description |
 |----------|-------------|
 | [Project Setup](./project-setup.md) | Vite, React, Tailwind, Shadcn, structure |
-| [Navbar](./components/navbar.md) | Header/navbar UI, layout, styling |
+| [Navbar](./components/navbar.md) | Header/navbar UI, Services dropdown, layout |
+| [Footer](./components/footer.md) | Footer layout, contact-in-footer on home only |
 | [Hero Section](./pages/home/hero-section.md) | Home page hero content and layout |
 | [Below Hero](./pages/home/below-hero-section.md) | Service highlights |
 | [About Section](./pages/home/about-section.md) | About NexWorkforce |

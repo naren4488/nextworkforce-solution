@@ -1,15 +1,15 @@
-import { Link } from "react-router-dom"
-import { GraduationCap, SlidersHorizontal } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Link } from "react-router-dom";
+import { GraduationCap, SlidersHorizontal } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const services = [
   {
     id: 1,
     icon: GraduationCap,
     title: "UKG Workforce Management Training",
-    intro: "Enterprise-aligned programs designed to build real-world UKG capability across consultants, HRIS teams, and workforce leaders.",
-    image:
-      "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop",
+    intro:
+      "Enterprise-aligned programs designed to build real-world UKG capability across consultants, HRIS teams, and workforce leaders.",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop",
     imageAlt: "Professional training session",
     bulletSectionLabel: "Engagement Focus:",
     bullets: [
@@ -23,9 +23,9 @@ const services = [
     id: 2,
     icon: SlidersHorizontal,
     title: "UKG Workforce Optimization & Managed Services",
-    intro: "Structured advisory and ongoing support ensuring UKG environments remain stable, governed, and performance-driven.",
-    image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
+    intro:
+      "Structured advisory and ongoing support ensuring UKG environments remain stable, governed, and performance-driven.",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
     imageAlt: "Team collaboration",
     bulletSectionLabel: "Engagement Focus:",
     bullets: [
@@ -35,7 +35,7 @@ const services = [
       "Business-aligned enhancements and change support",
     ],
   },
-]
+];
 
 export function OurServicesSection() {
   return (
@@ -43,56 +43,36 @@ export function OurServicesSection() {
       <div className="mx-auto max-w-[1320px] px-6">
         {/* Heading */}
         <div className="mx-auto mb-12 max-w-3xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">
-            OUR SERVICES OVERVIEW
-          </p>
+          <p className="text-sm font-semibold uppercase tracking-[0.1em] text-primary">OUR SERVICES OVERVIEW</p>
           <p className="mt-3 text-[clamp(1.75rem,3vw,2.75rem)] font-bold leading-[1.2] tracking-[-0.3px] text-foreground">
-            We provide two integrated service offerings designed to support both
-            people and platforms within the UKG ecosystem.
+            Integrated Workforce Management Services for People and Platform Performance
           </p>
         </div>
 
         {/* Cards grid */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          {services.map(({
-            id,
-            icon: Icon,
-            title,
-            intro,
-            image,
-            imageAlt,
-            bulletSectionLabel,
-            bullets,
-          }) => (
+          {services.map(({ id, icon: Icon, title, intro, image, imageAlt, bulletSectionLabel, bullets }) => (
             <article
               key={id}
               className="overflow-hidden rounded-2xl bg-white shadow-[0_2px_15px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_40px_rgba(59,78,240,0.12)]"
             >
               {/* Image */}
               <div className="aspect-video w-full overflow-hidden">
-                <img
-                  src={image}
-                  alt={imageAlt}
-                  className="size-full object-cover"
-                />
+                <img src={image} alt={imageAlt} className="size-full object-cover" />
               </div>
 
               {/* Icon - overlaps image boundary */}
-              <div className="flex justify-center px-6 mt-6">
-                <span className="flex size-12 items-center justify-center rounded-lg bg-primary/10 text-primary shadow-sm">
+              <div className="flex justify-center -mt-6">
+                <span className="flex size-12 items-center justify-center rounded-lg bg-white text-primary shadow-sm">
                   <Icon className="size-6" aria-hidden />
                 </span>
               </div>
 
               {/* Content */}
-              <div className="p-8 pt-10">
-                <h3 className="text-center text-xl font-bold leading-snug text-foreground">
-                  {title}
-                </h3>
+              <div className="p-8 pt-6">
+                <h3 className="text-center text-xl font-bold leading-snug text-foreground">{title}</h3>
                 <p className="mt-4 text-base leading-[1.7] text-muted-foreground">{intro}</p>
-                {bulletSectionLabel && (
-                  <p className="mt-4 font-semibold text-foreground">{bulletSectionLabel}</p>
-                )}
+                {bulletSectionLabel && <p className="mt-4 font-semibold text-foreground">{bulletSectionLabel}</p>}
                 <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
                   {bullets.map((bullet, i) => (
                     <li key={i} className="flex gap-2">
@@ -110,5 +90,5 @@ export function OurServicesSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

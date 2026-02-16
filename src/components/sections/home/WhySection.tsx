@@ -61,7 +61,7 @@ export function WhySection() {
             </p>
 
             {/* Center: Metric badge + smaller image */}
-            <div className="mt-10 flex flex-col gap-6 sm:flex-row sm:items-end sm:gap-8">
+            <div className="mt-10 flex flex-col gap-6 sm:flex-row  sm:gap-8">
               {/* Metric badge */}
               <div className="flex shrink-0">
                 <img

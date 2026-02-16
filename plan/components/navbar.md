@@ -35,9 +35,10 @@ The navbar is a full-width horizontal bar with **three distinct sections**:
 - Aligned horizontally (icon + text)
 
 **Navigation links (center):**
-- Home | About Us | Contact (no Services — service detail pages are reached from Home or direct URL)
+- Home | About Us | **Services** (dropdown) | Contact
+- Services has a down chevron; on hover a dropdown shows: UKG Workforce Management Training, UKG Workforce Optimization & Managed Services (links to `/services/1`, `/services/2`)
+- Dropdown is positioned with minimal gap below the trigger (positioned relative to the Services span)
 - White text, even spacing
-- No dropdowns in current implementation
 
 **Right section:**
 - **Search**: Circular button with white border, transparent fill, magnifying glass icon
@@ -49,7 +50,7 @@ The navbar is a full-width horizontal bar with **three distinct sections**:
 | Reference | Our project |
 |-----------|-------------|
 | Techor | NextWorkforce |
-| Home, About Us, Services, Pages, Blog, Contact | Home, About Us, Contact (no Services in nav; detail pages at /services/1, /services/2) |
+| Home, About Us, Services, Pages, Blog, Contact | Home, About Us, Services (dropdown), Contact |
 | Get A Quote | Contact Us CTA |
 
 ---
@@ -103,8 +104,8 @@ The navbar is a full-width horizontal bar with **three distinct sections**:
    - Link to `/`
 
 3. **Center nav**
-   - Map routes: `/`, `/about`, `/contact` only (no Services link)
-   - Service detail pages reached from Home section links or direct URL
+   - Links: Home, About Us, Services (with hover dropdown), Contact
+   - Services dropdown: two items (UKG Training → `/services/1`, UKG Managed Services → `/services/2`); dropdown positioned with minimal gap under trigger for reliable hover
 
 ### Phase B: Right Section
 
@@ -158,6 +159,9 @@ The navbar is a full-width horizontal bar with **three distinct sections**:
     <ul className="nav-links">
       <li><Link>Home</Link></li>
       <li><Link>About Us</Link></li>
+      <li class="group"><span>Services <ChevronDown /></span>
+        <ul class="dropdown">...</ul>
+      </li>
       <li><Link>Contact</Link></li>
     </ul>
 
@@ -196,10 +200,9 @@ The navbar is a full-width horizontal bar with **three distinct sections**:
 |-----------|-------------|
 | Home      | `/`         |
 | About Us  | `/about`    |
+| Services  | Dropdown: `/services/1`, `/services/2` |
 | Contact   | `/contact`  |
 | CTA       | `/contact` (Contact Us) |
-
-Service detail pages: `/services/1`, `/services/2` (not in nav; linked from Home).
 
 ---
 
@@ -208,7 +211,7 @@ Service detail pages: `/services/1`, `/services/2` (not in nav; linked from Home
 - [x] Restructure Header with 3-section layout
 - [x] Add logo icon + text
 - [x] Add top accent line (primary color)
-- [x] Center nav with links: Home, About Us, Contact (no Services)
+- [x] Center nav with links: Home, About Us, Services (hover dropdown), Contact
 - [x] Add search icon button (optional)
 - [x] Add hamburger icon button
 - [x] Add "Get A Quote" CTA button (pill-shaped)
@@ -219,6 +222,6 @@ Service detail pages: `/services/1`, `/services/2` (not in nav; linked from Home
 
 ## 6. Notes
 
-- Nav has 3 items: Home, About Us, Contact. No Services link; service detail pages are reached from Home ("Learn More", "Explore Our Services" → `/services/1`) or direct URL.
-- Reference showed dropdowns; current implementation has no dropdowns.
+- Nav has 4 items: Home, About Us, Services (dropdown), Contact. Services dropdown shows on hover with two links; dropdown is positioned relative to the trigger span so the gap is minimal and the menu stays open when moving the cursor to options (hover bridge via wrapper padding + negative margin).
+- Mobile: Services is expandable; tap to show the two service links.
 - Search and hamburger can be non-functional initially; wire up in later iterations.

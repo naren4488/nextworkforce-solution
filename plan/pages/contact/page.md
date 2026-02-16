@@ -41,6 +41,10 @@
 
 - Stack on mobile (form first or info first)
 
+### 2.3 Layout note
+
+- The dedicated Contact page has its own hero + form. On all non-home pages, **ContactFormSection** (same contact form + address block) also appears above the site footer; the footer then shows a single row (copyright, nav, scroll-to-top). See [Footer plan](../../components/footer.md).
+
 ---
 
 ## 3. Dependencies

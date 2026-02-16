@@ -106,9 +106,10 @@ src/
 | Contact     | `/contact`    | Form, address, map link                 |
 
 ### 5.2 Shared layout
-- **Header:** Logo, nav links (Home, About Us, Contact only — no Services), CTA (Contact Us)
-- **Footer:** Links (About, Contact), social, copyright — no Services link
-- Wrap all pages in a common layout component
+- **Header:** Logo, nav links (Home, About Us, **Services** dropdown, Contact), CTA (Contact Us). Services dropdown: hover to show UKG Training and UKG Managed Services links.
+- **Footer:** Single row: copyright | nav (Home, About, Contact) + scroll-to-top. On **home page only**, footer also includes contact form + address above that row (see [Footer plan](./components/footer.md)).
+- **Layout:** Home renders only `<Footer includeContactSection />`. Other pages render `<ContactFormSection />` then `<Footer />`. No duplicate copyright.
+- Wrap all pages in a common layout component.
 
 ---
 
